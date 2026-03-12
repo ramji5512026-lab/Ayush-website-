@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Ayush ka Website</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Body and Background */
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Changed to a darker, tech-vibe gradient */
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        nav h2 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #00ffcc; /* Added a cool neon accent color */
+        }
+
+        /* Main Welcome Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: fadeInDown 1.5s ease;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        /* Call to Action Button */
+        .btn {
+            background-color: #00ffcc;
+            color: #0f2027;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+            animation: fadeInUp 2s ease;
+        }
+
+        .btn:hover {
+            background-color: #00b38f;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 255, 204, 0.5);
+        }
+
+        /* Hobbies Section */
+        .hobbies-section {
+            padding: 80px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .hobbies-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #00ffcc;
+        }
+
+        .hobbies-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Hobby Cards */
+        .hobby-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Special styling for the Ethical Hacking card */
+        .hacker-card:hover {
+            box-shadow: 0 0 20px #00ff00;
+            border: 1px solid #00ff00;
+        }
+
+        .hacker-card h3 {
+            color: #00ff00; /* Hacker terminal green */
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .hobby-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .hobby-card p {
+            font-size: 16px;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+
+        .hobby-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+            margin-top: auto;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Ayush's Space</h2>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="hero">
+        <h1>Welcome to Ayush ka Website 💻</h1>
+        <p>Hello there! This is my personal space on the internet. Feel free to look around and get to know more about me, my projects, and what I love doing.</p>
+        <!-- Clicking this button now scrolls down smoothly to the hobbies section -->
+        <a href="#hobbies" class="btn">See My Hobbies</a>
+    </div>
+
+    <!-- Hobbies Section -->
+    <div id="hobbies" class="hobbies-section">
+        <h2>What I Love Doing</h2>
+        
+        <div class="hobbies-container">
+            <!-- Ethical Hacking Card -->
+            <div class="hobby-card hacker-card">
+                <div class="hobby-icon">🕵️‍♂️</div>
+                <h3>> Ethical_Hacking</h3>
+                <p>Exploring systems, finding vulnerabilities, and securing networks. Always learning how to defend by understanding the attack.</p>
+            </div>
+
+            <!-- Placeholder Hobby 2 (You can change this) -->
+            <div class="hobby-card">
+                <div class="hobby-icon">🎧</div>
+                <h3>Listening to Music</h3>
+                <p>Enjoying my favorite beats and discovering new artists to keep the focus high while working on my computer.</p>
+            </div>
+
+            <!-- Placeholder Hobby 3 (You can change this) -->
+            <div class="hobby-card">
+                <div class="hobby-icon">🎮</div>
+                <h3>Gaming</h3>
+                <p>Playing strategy and action games. It is a great way to unwind and sharpen my problem-solving skills.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ayush ka Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
